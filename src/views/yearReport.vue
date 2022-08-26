@@ -1,6 +1,6 @@
 <template>
     <div>
-        <yearReportItem />
+        <yearReportItem v-model='message'/>
     </div>
 </template>
 <script>
@@ -11,10 +11,13 @@ export default {
     components: { yearReportItem },
     data() {
         return {
+            message:'hello'
         }
     },
     methods: {},
-    mounted() { },
+    mounted() {
+        // console.log(this.message)
+     },
 }
 </script>
 

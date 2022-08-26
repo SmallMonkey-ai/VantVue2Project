@@ -1,5 +1,5 @@
 <template>
-    <div>年报组件
+    <div>{{message}}
         <chart id="pieChart2" :options="option" />
         <chart id="pieChart3" :options="option" />
     </div>
@@ -10,10 +10,15 @@ import chart from '../chart'
 export default {
     name: "yearReportItem",
     components: { chart },
+    model: {
+        prop: 'myValue', // 默认是value
+        event: 'myChange', // 默认是input
+    },
     data() {
         return {
             chartData: [],
-            option: {}
+            option: {},
+            message:'',
         }
     },
     methods: {
@@ -64,10 +69,9 @@ export default {
                             position: 'center',
                             // color: '#4c4a4a',
                             formatter: function (item) {
-                                console.log(item)
                                 return `${item.data.name} ${item.data.value}`
                             },
-                                // '{total}' + '\n\r' + '{active|车辆总数}',
+                            // '{total}' + '\n\r' + '{active|车辆总数}',
                             rich: {
                                 total: {
                                     fontSize: '16px',
@@ -102,7 +106,19 @@ export default {
     created() {
         this.getDataTest()
     },
+    watch: {
+        '$attrs.myValue': function (newVal,oldVal) {
+            if (oldVal !== newVal) {
+                console.log(oldVal, newVal)
+                this.message = newVal
+            }
+        }
+    },
     mounted() {
+        this.message = this.$attrs.myValue
+        setTimeout(() => {
+            this.$emit('myChange', '我想改变');
+        },5000)
     },
 }
 </script>

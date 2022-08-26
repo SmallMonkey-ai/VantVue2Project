@@ -20,11 +20,17 @@ import echarts from '@/utils/echarts'
 // 挂载到vue实例中
 Vue.prototype.$echarts = echarts
 
+// 引入自定义插件
+import './plugin'
+
 import mixin from '@/libs/mixin';
 Vue.mixin(mixin)
 
-import axios from '@/libs/axios'
-Vue.prototype.$api = axios
+import getBaseUrl from './utils/baseUrl'
+console.log(getBaseUrl(process.env.NODE_ENV))
+
+import { alert } from './utils/alert'
+Vue.prototype.$alert = alert
 
 Vue.config.productionTip = false
 

@@ -13,8 +13,8 @@ const routes = [
     component: () => import('@/views/allCharge')
   },
   {
-    path: "/customerComplain",
-    component: () => import('@/views/customerComplain')
+    path: "/Complain",
+    component: () => import('@/views/complain')
   },
   {
     path: "/extension",

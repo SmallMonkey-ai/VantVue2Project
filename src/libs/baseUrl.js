@@ -1,1 +1,0 @@
-module.exports = 'http://20.96.28.147/gzwgt/'

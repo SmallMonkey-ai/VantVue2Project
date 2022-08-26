@@ -28,6 +28,8 @@
 import Vue from 'vue';
 import { Loading, Overlay } from 'vant';
 Vue.use(Loading).use(Overlay);
+// 初始化axios 对象
+import * as dd from "dingtalk-jsapi";
 export default {
   data() {
     return {
@@ -39,7 +41,7 @@ export default {
         { menuName: '策划', path: '/plan' },
         { menuName: '推广', path: '/extension' },
         { menuName: '财务', path: '/finance' },
-        { menuName: '客诉', path: '/customerComplain' },
+        { menuName: '客诉', path: '/complain' },
         { menuName: '综管', path: '/allCharge' },
       ],
       titleHeight: 0,
@@ -47,15 +49,84 @@ export default {
 
   },
   created() { 
-    this.$watermark.set('水印水印')
+    this.$watermark.set('水印水印');
+    // this.getCorpId() //钉钉授权
   },
   mounted() {
+    this.$router.push(this.menuList[this.currentIndex].path)
     this.titleHeight = this.$refs.fixHeader.offsetHeight;
     setTimeout(() => {
       this.show = false;
     }, 500)
   },
   methods: {
+    getCorpId() {
+      if (dd.env.platform !== "notInDingTalk") {
+        this.$api.getCorpId().then(res => {
+          if (res.status == 0) {
+            let Base64 = require("js-base64").Base64;
+            let crop_id = Base64.decode(res.data);
+            this.login(crop_id);
+          } else {
+            alert(res.error);
+          }
+        });
+      } else {
+        alert("请用钉钉工作台中打开此应用。");
+      }
+    },
+    login(crop_id) {
+      let corpId = crop_id;
+      dd.ready(() => {
+        // dd.ready参数为回调函数，在环境准备就绪时触发，jsapi的调用需要保证在该回调函数触发后调用，否则无效。
+        dd.runtime.permission.requestAuthCode({
+          corpId: corpId,
+          onSuccess: info => {
+            let code = info.code; // 通过该免登授权码可以获取用户身份
+            this.autoLogin(code);
+          },
+          onFail: err => {
+            console.log("钉钉接口出错：", err);
+            dd.device.notification.alert({
+              message: "钉钉免密登录失败",
+              title: "提示",
+              buttonName: "确定"
+            });
+          }
+        });
+      });
+    },
+    // 钉钉授权码获取
+    autoLogin(authCode) {
+      var parm = {};
+      parm.ac = authCode + "";
+      parm.version = "1.0";
+      this.$api.getDdCode(parm).then(res => {
+        if (res.status == 0) {
+          let info = {};
+          info.name = res.name;
+          info.ou = res.ou;
+          info.id = res.organization;
+          info.username = res.username;
+          info.title = res.title;
+          console.log('2222222222222222222', res)
+          window.localStorage.setItem("info", JSON.stringify(info));
+          window.localStorage.setItem("token", res.token);
+          window.localStorage.setItem("channelIds", JSON.stringify(res.channelIds));
+          window.localStorage.setItem("route", JSON.stringify(res.route));
+          window.localStorage.setItem("userId", res.uid);
+          let menu = res.menu;
+          if (menu.length == 0) {
+            alert("您没有权限访问该系统，请向IT中心申请权限！");
+          } else {
+            window.localStorage.setItem("menu", res.menu);
+            this.$router.push({ path: "/welcome" });
+          }
+        } else {
+          alert("钉钉免密登录失败");
+        }
+      });
+    },
     openCurrentMenu(item, index) {
       this.currentIndex = index
       this.$router.push(item.path)
@@ -102,8 +173,6 @@ body {
   font-size: 16px;
   word-break: break-all;
   color: #333;
-  padding-bottom: calc(10px + env(safe-area-inset-bottom));
-  padding-bottom: calc(10px + env(safe-area-inset-bottom));
 }
 
 .t-c {

@@ -1,15 +1,14 @@
 <template>
     <div>
-        <customerComplainItem/>
+        <complainItem />
     </div>
 </template>
 
 <script>
-import customerComplainItem from '../components/customerComplain/customerComplainItem.vue'
-
+import complainItem from '../components/complain/complainItem.vue'
 export default {
-    name: "customerComplain",
-    components: { customerComplainItem },
+    name: "complain",
+    components: { complainItem },
     data() {
         return {
         }

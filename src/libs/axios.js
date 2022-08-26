@@ -5,7 +5,7 @@ import Vue from 'vue';
 
 //判断开发环境是本地还是线上 true是本地 false是线上
 //保存url 如果是本地 则url前缀为/api 如果是线上 则url前缀为线上api地址
-import baseUrl from './baseUrl';
+import baseUrl from '../utils/baseUrl';
 
 let url = process.env.NODE_ENV == "development" ? "/api" : baseUrl;
 const axios = Axios.create({
