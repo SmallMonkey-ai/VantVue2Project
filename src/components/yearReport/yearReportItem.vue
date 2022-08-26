@@ -118,6 +118,7 @@ export default {
         this.message = this.$attrs.myValue
         setTimeout(() => {
             this.$emit('myChange', '我想改变');
+            this.$alert('改变成功！！')
         },5000)
     },
 }

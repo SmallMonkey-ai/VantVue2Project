@@ -1,5 +1,4 @@
-import {
-    get,
-} from '../utils/http'
+import { http } from '../utils/http'
 
-export let api_test = (params) => get('url', params);
+
+export let api_test = (params) => http.get('url', params);

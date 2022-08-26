@@ -20,17 +20,16 @@ import echarts from '@/utils/echarts'
 // 挂载到vue实例中
 Vue.prototype.$echarts = echarts
 
-// 引入自定义插件
-import './plugin'
-
 import mixin from '@/libs/mixin';
 Vue.mixin(mixin)
 
-import getBaseUrl from './utils/baseUrl'
-console.log(getBaseUrl(process.env.NODE_ENV))
-
+// 挂载输入的alert 以便兼容钉钉环境
 import { alert } from './utils/alert'
 Vue.prototype.$alert = alert
+
+import http from './utils/http'
+Vue.prototype.$http = http
+
 
 Vue.config.productionTip = false
 

@@ -41,6 +41,8 @@ export const alert = function(msg, callback) {
     var dialog_ok2 = document.getElementById("dialog_ok2");
     dialog_ok2.onclick = function() {
         dialogs2.style.display = 'none';
-        callback();
+        if (callback) {
+            callback();
+        }
     };
 };

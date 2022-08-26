@@ -1,22 +1,17 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import axios from '@/libs/axios'
-
+import http from '@/utils/http'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    userToken: '',
-    apiToken: '',
+    token: localStorage.getItem('token') || '',
     userInfo: null
   },
   mutations: {
-    setApiToken(state, value) {
-      state.apiToken = value;
-      axios.defaults.headers.common['X-Access-Token'] = value;
-    },
-    setUserToken(state, value) {
-      state.userToken = value;
+    setToken(state, value) {
+      state.token = value;
+      http.defaults.headers.common['X-Access-Token'] = value;
     },
     setUserInfo(state, value) {
       state.userInfo = value;
