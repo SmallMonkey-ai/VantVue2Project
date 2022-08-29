@@ -1,5 +1,5 @@
 <template>
-    <div>{{message}}
+    <div>{{ $attrs.myValue }}
         <chart id="pieChart2" :options="option" />
         <chart id="pieChart3" :options="option" />
     </div>
@@ -18,7 +18,8 @@ export default {
         return {
             chartData: [],
             option: {},
-            message:'',
+            message: '',
+            timer: null
         }
     },
     methods: {
@@ -107,7 +108,7 @@ export default {
         this.getDataTest()
     },
     watch: {
-        '$attrs.myValue': function (newVal,oldVal) {
+        '$attrs.myValue': function (newVal, oldVal) {
             if (oldVal !== newVal) {
                 console.log(oldVal, newVal)
                 this.message = newVal
@@ -115,12 +116,16 @@ export default {
         }
     },
     mounted() {
-        this.message = this.$attrs.myValue
-        setTimeout(() => {
+        // this.message = this.$attrs.myValue
+        this.timer = setTimeout(() => {
             this.$emit('myChange', '我想改变');
-            this.$alert('改变成功！！')
-        },5000)
+            // this.$alert('改变成功！！')
+        }, 5000)
     },
+    beforeDestroy() {
+        clearTimeout(this.timer)
+        this.timer = null
+    }
 }
 </script>
 

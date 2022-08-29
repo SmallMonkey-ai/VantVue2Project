@@ -16,4 +16,13 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
+  <script>
+    function setRem() {
+      var windw = document.documentElement.clientWidth || document.body.clientWidth;
+      var uiw = 375;
+      document.documentElement.style.fontSize = (windw / uiw) * 16 + 'px'
+    }
+    setRem();
+    window.onresize = setRem;
+  </script>
 </html>

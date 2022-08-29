@@ -27,9 +27,9 @@ Vue.mixin(mixin)
 import { alert } from './utils/alert'
 Vue.prototype.$alert = alert
 
+// 全局挂载axios
 import http from './utils/http'
 Vue.prototype.$http = http
-
 
 Vue.config.productionTip = false
 

@@ -48,7 +48,7 @@ export default {
     };
 
   },
-  created() { 
+  created() {
     this.$watermark.set('水印水印');
     // this.getCorpId() //钉钉授权
   },
@@ -134,7 +134,7 @@ export default {
   },
   computed: {
     computeTitleHeight() {
-      return this.titleHeight + 'px'
+      return this.titleHeight / 16 + 'rem'
     }
   }
 };
@@ -170,9 +170,10 @@ body {
   /* max-width: 750px; */
   min-height: 100vh;
   margin: auto;
-  font-size: 16px;
   word-break: break-all;
   color: #333;
+  display: flex;
+  flex-direction: column;
 }
 
 .t-c {
@@ -223,6 +224,7 @@ body {
       li {
         margin-right: 0.5rem;
         cursor: pointer;
+        font-size: 1rem;
       }
     }
   }
@@ -234,7 +236,6 @@ body {
   padding-top: 0.5rem;
   // top: 8rem;
   left: 0rem;
-
 }
 
 .focusMenu {
