@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: "/",
-    component: () => import('@/views/yearReport')
+    component: () => import('@/views/index')
   },
   {
     path: "/allCharge",
@@ -42,4 +42,12 @@ const router = new VueRouter({
   routes
 })
 
+const originalPush = VueRouter.prototype.push
+VueRouter.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
+}
+const originalReplace = VueRouter.prototype.place
+VueRouter.prototype.place = function place(location) {
+  return originalReplace.call(this, location).catch(err => err)
+}
 export default router
