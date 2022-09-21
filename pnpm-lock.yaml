@@ -7,12 +7,16 @@ specifiers:
   '@vue/cli-plugin-router': ~4.5.0
   '@vue/cli-plugin-vuex': ~4.5.0
   '@vue/cli-service': ~4.5.0
+  '@vue/composition-api': ^1.7.0
   axios: ^0.24.0
   babel-eslint: ^10.1.0
   babel-plugin-import: ^1.13.3
+  better-scroll: ^2.4.2
+  clipboard: ^2.0.11
   core-js: ^3.6.5
   dingtalk-jsapi: ^3.0.7
   echarts: ^5.3.3
+  element-ui: ^2.15.9
   eslint: ^6.7.2
   eslint-plugin-vue: ^6.2.2
   html-webpack-plugin: ^5.5.0
@@ -24,6 +28,7 @@ specifiers:
   sass-loader: ^8.0.2
   vant: ^2.12.35
   vue: ^2.6.11
+  vue-echarts: ^6.2.3
   vue-router: ^3.2.0
   vue-template-compiler: ^2.6.11
   vuex: ^3.4.0
@@ -31,15 +36,19 @@ specifiers:
 dependencies:
   '@vant/area-data': 1.3.1
   axios: 0.24.0
+  better-scroll: 2.4.2
+  clipboard: 2.0.11
   core-js: 3.24.1
   dingtalk-jsapi: 3.0.7
   echarts: 5.3.3
+  element-ui: 2.15.9_vue@2.7.10
   js-base64: 3.7.2
   mini-css-extract-plugin: 0.9.0
   nprogress: 0.2.0
   page-skeleton-webpack-plugin: 0.10.12
   vant: 2.12.48_vue@2.7.10
   vue: 2.7.10
+  vue-echarts: 6.2.3_vdydoaf37gjgbvbj6gyy7afpku
   vue-router: 3.6.1_vue@2.7.10
   vuex: 3.6.2_vue@2.7.10
 
@@ -49,6 +58,7 @@ devDependencies:
   '@vue/cli-plugin-router': 4.5.19_@vue+cli-service@4.5.19
   '@vue/cli-plugin-vuex': 4.5.19_@vue+cli-service@4.5.19
   '@vue/cli-service': 4.5.19_zdtl5ddzq7gen3ioiwdlpjzipm
+  '@vue/composition-api': 1.7.0_vue@2.7.10
   babel-eslint: 10.1.0_eslint@6.8.0
   babel-plugin-import: 1.13.5
   eslint: 6.8.0
@@ -1264,6 +1274,94 @@ packages:
       '@babel/helper-validator-identifier': 7.18.6
       to-fast-properties: 2.0.0
 
+  /@better-scroll/core/2.4.2:
+    resolution: {integrity: sha512-IqVZLnh04YpaEAy9wJDxtFK/stxVQjB9A9Wcr3Uwkj7Av1TtFpin+t/TObl53diNDG5ZJ+vck/OAthphpuugLA==}
+    dependencies:
+      '@better-scroll/shared-utils': 2.4.2
+    dev: false
+
+  /@better-scroll/indicators/2.4.2:
+    resolution: {integrity: sha512-dScI0HIt06L1thLO+1W7w1enqRtegWF1izKYhswiyTXLgagLh2QbAi+oexNiPSOGBuNz8w1mO7hZvVJez/ZFkw==}
+    dependencies:
+      '@better-scroll/core': 2.4.2
+    dev: false
+
+  /@better-scroll/infinity/2.4.2:
+    resolution: {integrity: sha512-KGpCWLTyMzcGBT59c3N/JaVauLmi0jG2YZApdnqON+Oz4AJiHnzGkzWc4EJxcxR3Vy+m5Jp91y6xrpsvRmOdIg==}
+    dependencies:
+      '@better-scroll/core': 2.4.2
+    dev: false
+
+  /@better-scroll/mouse-wheel/2.4.2:
+    resolution: {integrity: sha512-dLc8vlYkSYN9AQEo4NDPQloPhscCV17TY98JUBcio4I2STDlYYIQqofqm1GQPfByfK9f057DnrcgZ/bPVx7PTA==}
+    dependencies:
+      '@better-scroll/core': 2.4.2
+    dev: false
+
+  /@better-scroll/movable/2.4.2:
+    resolution: {integrity: sha512-y4FbKx9FTUfAfM6wW+PCKA3CONc4nfjaE4N1ImGsIorzkSWV2eGO+LTD6FVv5+gVINI/o9Xj/gHmEJUaupUeSg==}
+    dependencies:
+      '@better-scroll/core': 2.4.2
+    dev: false
+
+  /@better-scroll/nested-scroll/2.4.2:
+    resolution: {integrity: sha512-JnC2sqtDqVkj9F5J39u52b6qDsMqXbnURG67dHf97tYoYP2dluwjkvhhxjSFrghREoQzT/KWcDbkfcGy47lQwQ==}
+    dependencies:
+      '@better-scroll/core': 2.4.2
+    dev: false
+
+  /@better-scroll/observe-dom/2.4.2:
+    resolution: {integrity: sha512-eeS77CZs+V72dkya10e5ptndBAbhQVcXoYGvfoIihOJgCPqO5MdYTpzRmlbshYCEE5juUMLe82Kx8FSbOejpAw==}
+    dependencies:
+      '@better-scroll/core': 2.4.2
+    dev: false
+
+  /@better-scroll/observe-image/2.4.2:
+    resolution: {integrity: sha512-ToYVf5vn0cio5B9uaL5NyvFX3JNU6L0Po20Lw7uxa0+FE+kMvSAMJN+9POg6G+cfIqI8GVHhyyR+4Ev8v2Nl5Q==}
+    dependencies:
+      '@better-scroll/core': 2.4.2
+    dev: false
+
+  /@better-scroll/pull-down/2.4.2:
+    resolution: {integrity: sha512-bqMLk33o4oesTXIIOteBKHQgfVKjIVvity39TM/MfzkbY1WDBxD+HFS7ySgoqw7Kl2Wiv/U76Wfqzmm6yDdg7Q==}
+    dependencies:
+      '@better-scroll/core': 2.4.2
+    dev: false
+
+  /@better-scroll/pull-up/2.4.2:
+    resolution: {integrity: sha512-07Cke3oa96lN9/inxJZ0ixh0nBbbqxOi2IKcBGtD6dP+susiMcdhgd/c7zNRjXkwlw0vzTNfXTgExIOEWzLHYg==}
+    dependencies:
+      '@better-scroll/core': 2.4.2
+    dev: false
+
+  /@better-scroll/scroll-bar/2.4.2:
+    resolution: {integrity: sha512-zZd0+sWfzTCXJeuA001o5bea7AvLYz7BCE7dolxFbPTIPnV5V5UEH8LLdXQ/HIwgxI0Pj9PoY9njSuhooh6lfg==}
+    dependencies:
+      '@better-scroll/core': 2.4.2
+    dev: false
+
+  /@better-scroll/shared-utils/2.4.2:
+    resolution: {integrity: sha512-Gy/Jfbpu+hq0u+PcjkTqyXGqAf+0dexTzEZ5IDXEVwJVLmd3cx8A73oTcAZ8QZgk4wSHvlMjXecSaptkhnNPEw==}
+    dev: false
+
+  /@better-scroll/slide/2.4.2:
+    resolution: {integrity: sha512-VfdFHm/meo4nEyfx0JLn8rUHfQdQCnoBHs/BsV+vmjVivKg+cVgfS+QaytrIulWKqNAWNlfXbAaNtZMv8gNKZg==}
+    dependencies:
+      '@better-scroll/core': 2.4.2
+    dev: false
+
+  /@better-scroll/wheel/2.4.2:
+    resolution: {integrity: sha512-oJw68glWbrYBbRK8RJnKo3Fw9bU7Cd4zDbBHbKZ062/YJAJUZW9wF/3Lout4PnolkjuJIp2TZiEgJNtuRd+Njg==}
+    dependencies:
+      '@better-scroll/core': 2.4.2
+    dev: false
+
+  /@better-scroll/zoom/2.4.2:
+    resolution: {integrity: sha512-rN/BTE3lf2sNNvKowGL/tUKZ/BgdZcZa0pjE/rVW0tBL/7x68cBowWQD5HF2Z2Bge8OPXRjkwN/xN1aFYhEtWA==}
+    dependencies:
+      '@better-scroll/core': 2.4.2
+    dev: false
+
   /@hapi/address/2.1.4:
     resolution: {integrity: sha512-QD1PhQk+s31P1ixsX0H0Suoupp3VMXzIVMSwobR3F3MSUO2YCV0B7xqLcUw/Bh8yuvd3LhpyqLQWTNcRmp6IdQ==}
     deprecated: Moved to 'npm install @sideway/address'
@@ -2006,6 +2104,13 @@ packages:
       - whiskers
     dev: true
 
+  /@vue/composition-api/1.7.0_vue@2.7.10:
+    resolution: {integrity: sha512-hxOgLYR+wjuPX9bkP2pAPlqUs98XxBoa9DSLyp1z6+YR92wC42PZcZKs4d+VRtcv4udOv041Kss+F6ap5nj8YA==}
+    peerDependencies:
+      vue: '>= 2.5 < 2.7'
+    dependencies:
+      vue: 2.7.10
+
   /@vue/preload-webpack-plugin/1.1.2_kawgdd6iu7jv34d6smtvgjfc2a:
     resolution: {integrity: sha512-LIZMuJk38pk9U9Ur4YzHjlIyMuxPlACdBIHH9/nGYVTsaGKOSnSuELiE8vS9wa+dJpIYspYUOqk+L1Q4pgHQHQ==}
     engines: {node: '>=6.0.0'}
@@ -2592,6 +2697,25 @@ packages:
       tweetnacl: 0.14.5
     dev: true
 
+  /better-scroll/2.4.2:
+    resolution: {integrity: sha512-I/JzJNUay2vMAkczBa/4x52QBdUGA3Bs/QtrKrxVjSbBHUMG6yR14srQr4aCAWlIra1FBmuddwGRfI6zRagI9Q==}
+    dependencies:
+      '@better-scroll/core': 2.4.2
+      '@better-scroll/indicators': 2.4.2
+      '@better-scroll/infinity': 2.4.2
+      '@better-scroll/mouse-wheel': 2.4.2
+      '@better-scroll/movable': 2.4.2
+      '@better-scroll/nested-scroll': 2.4.2
+      '@better-scroll/observe-dom': 2.4.2
+      '@better-scroll/observe-image': 2.4.2
+      '@better-scroll/pull-down': 2.4.2
+      '@better-scroll/pull-up': 2.4.2
+      '@better-scroll/scroll-bar': 2.4.2
+      '@better-scroll/slide': 2.4.2
+      '@better-scroll/wheel': 2.4.2
+      '@better-scroll/zoom': 2.4.2
+    dev: false
+
   /bfj/6.1.2:
     resolution: {integrity: sha512-BmBJa4Lip6BPRINSZ0BPEIfB1wUY/9rwbwvIHQA1KjX9om29B6id0wnWXq7m3bn5JrUVjeOTnVuhPT1FiHwPGw==}
     engines: {node: '>= 6.0.0'}
@@ -3155,6 +3279,14 @@ packages:
     resolution: {integrity: sha512-FxqpkPPwu1HjuN93Omfm4h8uIanXofW0RxVEW3k5RKx+mJJYSthzNhp32Kzxxy3YAEZ/Dc/EWN1vZRY0+kOhbw==}
     engines: {node: '>= 10'}
     dev: true
+
+  /clipboard/2.0.11:
+    resolution: {integrity: sha512-C+0bbOqkezLIsmWSvlsXS0Q0bmkugu7jcfMIACB+RDEntIzQIkdr148we28AfSloQLRdZlYL/QYyrq05j/3Faw==}
+    dependencies:
+      good-listener: 1.2.2
+      select: 1.1.2
+      tiny-emitter: 2.1.0
+    dev: false
 
   /clipboardy/2.3.0:
     resolution: {integrity: sha512-mKhiIL2DrQIsuXMgBgnfEHOZOryC7kY7YO//TN6c63wlEm3NG5tz+YgY5rVi29KCmq/QQjKYvM7a19+MDOTHOQ==}
@@ -4031,6 +4163,10 @@ packages:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
     engines: {node: '>=0.4.0'}
     dev: true
+
+  /delegate/3.2.0:
+    resolution: {integrity: sha512-IofjkYBZaZivn0V8nnsMJGBr4jVLxHDheKSW88PyxS5QC4Vo9ZbZVvhzlSxY87fVq3STR6r+4cGepyHkcWOQSw==}
+    dev: false
 
   /depd/1.1.2:
     resolution: {integrity: sha512-7emPTl6Dpo6JRXOXjLRxck+FlLRX5847cLKEn00PLAgc3g2hTZZgr+e4c2v6QpSmLeFP3n5yUo7ft6avBK/5jQ==}
@@ -5246,6 +5382,12 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /good-listener/1.2.2:
+    resolution: {integrity: sha512-goW1b+d9q/HIwbVYZzZ6SsTr4IgE+WA44A0GmPIQstuOrgsFcT7VEJ48nmr9GaRtNu0XTKacFLGnBPAM6Afouw==}
+    dependencies:
+      delegate: 3.2.0
+    dev: false
 
   /graceful-fs/4.2.10:
     resolution: {integrity: sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==}
@@ -8154,6 +8296,10 @@ packages:
   /requires-port/1.0.0:
     resolution: {integrity: sha512-KigOCHcocU3XODJxsu8i/j8T9tzT4adHiecwORRQ0ZZFcp7ahwXuRU1m+yuO90C5ZUyGeGfocHDI14M3L3yDAQ==}
 
+  /resize-detector/0.3.0:
+    resolution: {integrity: sha512-R/tCuvuOHQ8o2boRP6vgx8hXCCy87H1eY9V5imBYeVNyNVpuL9ciReSccLj2gDcax9+2weXy3bc8Vv+NRXeEvQ==}
+    dev: false
+
   /resize-observer-polyfill/1.5.1:
     resolution: {integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==}
     dev: false
@@ -8334,6 +8480,10 @@ packages:
   /select-hose/2.0.0:
     resolution: {integrity: sha512-mEugaLK+YfkijB4fx0e6kImuJdCIt2LxCRcbEYPqRGCs4F2ogyfZU5IAZRdjCP8JPq2AtdNoC/Dux63d9Kiryg==}
     dev: true
+
+  /select/1.1.2:
+    resolution: {integrity: sha512-OwpTSOfy6xSs1+pwcNrv0RBMOzI39Lp3qQKUTPVVPRjCdNa5JH/oPRiqsesIskK8TVgmRiHwO4KXlV2Li9dANA==}
+    dev: false
 
   /selfsigned/1.10.14:
     resolution: {integrity: sha512-lkjaiAye+wBZDCBsu5BGi0XiLRxeUlsGod5ZP924CRSEoGuZAw/f7y9RKu28rwTfiHVhdavhB0qH0INV6P1lEA==}
@@ -9086,6 +9236,10 @@ packages:
     resolution: {integrity: sha512-qsdtZH+vMoCARQtyod4imc2nIJwg9Cc7lPRrw9CzF8ZKR0khdr8+2nX80PBhET3tcyTtJDxAffGh2rXH4tyU8A==}
     dev: true
 
+  /tiny-emitter/2.1.0:
+    resolution: {integrity: sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==}
+    dev: false
+
   /tiza/2.2.1:
     resolution: {integrity: sha512-ZBQEM/GLHyHsK6fZrzJBsmNkwK4C0j5oh8JIAfWfnutE41JtbfcntriClni97eB5EYvVYVWnfEcBCsenFu9FbQ==}
     dev: false
@@ -9467,6 +9621,40 @@ packages:
   /vm-browserify/1.1.2:
     resolution: {integrity: sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==}
     dev: true
+
+  /vue-demi/0.13.11_2jvg2he4lo2rgtlz5akzccw6ie:
+    resolution: {integrity: sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A==}
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      '@vue/composition-api': 1.7.0_vue@2.7.10
+      vue: 2.7.10
+    dev: false
+
+  /vue-echarts/6.2.3_vdydoaf37gjgbvbj6gyy7afpku:
+    resolution: {integrity: sha512-xHzUvgsgk/asJTcNa8iVVwoovZU3iEUHvmBa3bzbiP3Y6OMxM1YXsoWOKVmVVaUusGs4ob4pSwjwNy2FemAz9w==}
+    requiresBuild: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.5
+      echarts: ^5.1.2
+      vue: ^2.6.12 || ^3.1.1
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      '@vue/composition-api': 1.7.0_vue@2.7.10
+      echarts: 5.3.3
+      resize-detector: 0.3.0
+      vue: 2.7.10
+      vue-demi: 0.13.11_2jvg2he4lo2rgtlz5akzccw6ie
+    dev: false
 
   /vue-eslint-parser/7.11.0_eslint@6.8.0:
     resolution: {integrity: sha512-qh3VhDLeh773wjgNTl7ss0VejY9bMMa0GoDG2fQVyDzRFdiU3L7fw74tWZDHNQXdZqxO3EveQroa9ct39D2nqg==}

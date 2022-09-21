@@ -3,7 +3,7 @@
     <div>
       <div class="fixHeader" ref="fixHeader">
         <div class="logoAndTitle">
-          <img src="../assets/avatar.jpeg" alt="">
+          <img src="../assets/Logo.png" alt="">
           <span>汇正数据报表系统</span>
         </div>
         <div class="menu">
@@ -32,7 +32,7 @@ export default {
       loading: true,
       currentIndex: 0,
       menuList: [
-        { menuName: '年报', path: '/yearReport' },
+        { menuName: '运营管理', path: '/management' },
         { menuName: '销售', path: '/sale' },
         { menuName: '策划', path: '/plan' },
         { menuName: '推广', path: '/extension' },
@@ -208,12 +208,12 @@ body {
 
 .fixHeader {
   width: 100vw;
-  min-height: 6rem;
+  min-height: 5.5rem;
   position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
-  background-color: rgb(67, 140, 189);
+  background-color: #0099FF;
 
   .logoAndTitle {
 
@@ -223,11 +223,12 @@ body {
     padding-top: 1rem;
 
     img {
-      width: 3rem;
-      height: 3rem
+      width: 2rem;
+      height: 2rem
     }
 
     span {
+      color: #0000A6;
       font-size: 1.5rem;
     }
   }
@@ -242,7 +243,9 @@ body {
       li {
         margin-right: 0.5rem;
         cursor: pointer;
-        font-size: 1rem;
+        font-size: 0.8rem;
+        color: #CCCCCC;
+        padding-bottom: 5px;
       }
     }
   }
@@ -251,13 +254,14 @@ body {
 .menuBody {
   position: absolute;
   z-index: 1;
-  padding-top: 0.5rem;
+  // padding-top: 0.5rem;
   // top: 8rem;
   left: 0rem;
 }
 
 .focusMenu {
-  color: aquamarine;
+  color: #FFFFFF !important;
+  border-bottom: 2px solid #ffffff;
 }
 </style>
 

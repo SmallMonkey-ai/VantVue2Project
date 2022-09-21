@@ -5,13 +5,14 @@
 <script>
 export default {
     props: {
-        height: {
-            type: String,
-            default: '10.9rem'
-        },
-        width: {
-            type: String,
-            default: '100vw'
+        size: {
+            type: Object,
+            default: function () {
+                return {
+                    height: '12rem',
+                    width: '100vw'
+                }
+            }
         },
         chartData: {
             type: Object,
@@ -22,8 +23,8 @@ export default {
     computed: {
         style() {
             return {
-                height: this.height,
-                width: this.width
+                height: this.size.height + 'rem',
+                width: this.size.width
             }
         }
     },
@@ -33,14 +34,17 @@ export default {
         }
     },
     mounted() {
+        let data = this.chartData.xData.map((item, index) => {
+            return { name: item, value: this.chartData.yData[index] }
+        })
         this.$nextTick(() => {
-            // let that = this
+            let that = this
             this.myChart = this.$echarts.init(this.$refs.chartLine)
             // 绘制图表
             let option = {
                 title: {
                     text: this.chartData.title,
-                    left: '24px',
+                    left: 'center',
                     top: '5%',
                     textStyle: {
                         fontSize: '14px',
@@ -49,9 +53,15 @@ export default {
                         color: '#262626'
                     }
                 },
+                grid: {
+                    top: '28%',
+                    right: '10%',
+                    left: '10%',
+                    bottom: '14%'
+                },
                 tooltip: {
                     trigger: 'item',
-                    show:false,
+                    show: false,
                     position: function (point, params, dom, rect, size) {
                         // 其中point为当前鼠标的位置，size中有两个属性：viewSize和contentSize，分别为外层div和tooltip提示框的大小
                         var x = point[0]; //
@@ -76,16 +86,17 @@ export default {
                         }
                         return [posX, posY];
                     },
+
                 },
                 legend: {
                     type: 'scroll',
                     orient: 'vertical', //图例列表的布局朝向（垂直排列）
-                    left: '65%',
+                    left: '55%',
                     y: 'center',
                     itemGap: 12,//图例的上下间距
                     itemWidth: 8,//图例左侧图块的长度
                     textStyle: {
-                        fontSize: 12,
+                        fontSize: 10,
                         fontFamily: 'Microsoft YaHei',
                         fontWeight: 400,
                     },
@@ -101,7 +112,13 @@ export default {
                     // selected:this.monitorData.name可不写
                     //格式化处理方案一： 
                     formatter: function (name) {
-                        return name.length > 10 ? name.substr(0, 10) + '...' : name
+                        let currentValue;
+                        for (let i = 0; i < data.length; i++) {
+                            if (data[i].name == name) {
+                                currentValue = data[i].value
+                            }
+                        }
+                        return name.length > 10 ? name.substr(0, 10) + '...' : name + ':' + currentValue + that.chartData.config.yUnit || '万'
                     },
                     //格式化处理方案二： 
                     // formatter: function (name) {
@@ -126,11 +143,15 @@ export default {
                             borderWidth: 1
                         },
                         label: {
-                            show: false,
+                            show: true,
                             position: 'center',
                             // color: '#4c4a4a',
-                            formatter: function (item) {
-                                return `${item.data.name} ${item.data.value}`
+                            formatter: function () {
+                                let total = 0
+                                for (let i = 0; i < data.length; i++) {
+                                    total += data[i].value
+                                }
+                                return total
                             },
                             // '{total}' + '\n\r' + '{active|车辆总数}',
                             rich: {
@@ -158,7 +179,7 @@ export default {
                         labelLine: {
                             show: false
                         },
-                        data: this.chartData.data
+                        data: data
                     }
                 ]
             }

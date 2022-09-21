@@ -5,13 +5,14 @@
 <script>
 export default {
     props: {
-        height: {
-            type: String,
-            default: '10.9rem'
-        },
-        width: {
-            type: String,
-            default: '100vw'
+        size: {
+            type: Object,
+            default: function () {
+                return {
+                    height: '12rem',
+                    width:'100vw'
+                }
+            }
         },
         chartData: {
             type: Object,
@@ -22,8 +23,8 @@ export default {
     computed: {
         style() {
             return {
-                height: this.height,
-                width: this.width
+                height: this.size.height + 'rem',
+                width: this.size.width
             }
         }
     },
@@ -115,7 +116,7 @@ export default {
                     },
                 }
                 ],
-                series:this.NewSeries
+                series: this.NewSeries
             }
             this.myChart.setOption(option)
             window.addEventListener('resize', () => {
@@ -130,13 +131,13 @@ export default {
             this.chartData.colorList.map((item, index) => {
                 let currentData = []
                 if (index == 0) {
-                    currentData = this.chartData.yData1
+                    currentData = this.chartData.yData
                 } else if (index == 1) {
-                    currentData = this.chartData.yData2
+                    currentData = this.chartData.yData1
                 } else if (index == 2) {
-                    currentData = this.chartData.yData3
+                    currentData = this.chartData.yData2
                 } else if (index == 3) {
-                    currentData = this.chartData.yData4
+                    currentData = this.chartData.yData3
                 }
                 let seriesItem = {
                     name: this.chartData.config.yName[index] || '',
@@ -148,7 +149,7 @@ export default {
                     lineStyle: {
                         normal: {
                             width: 2,
-                            color: item,                            
+                            color: item,
                             shadowOffsetY: 0
                         }
                     },
@@ -167,7 +168,7 @@ export default {
                             borderColor: '#fff', //图形的描边颜色
                             borderWidth: 0, // 描边的线宽
                             shadowBlur: 4, // 图形的阴影大小
-                            shadowColor:'#fff', // 图形的阴影颜色
+                            shadowColor: '#fff', // 图形的阴影颜色
                         },
                     },
                     smooth: false

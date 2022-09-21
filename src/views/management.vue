@@ -1,15 +1,15 @@
 <template>
     <div class="body">
-        <yearReportItem v-model='message' />
+        <managementItem v-model='message' />
     </div>
 </template>
 <script>
-import yearReportItem from '../components/yearReport/yearReportItem';
+import managementItem from '../components/management/managementItem';
 
 
 export default {
     name: "yearReport",
-    components: { yearReportItem },
+    components: { managementItem },
     data() {
         return {
             message: 'hello'

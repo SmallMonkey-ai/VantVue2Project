@@ -14,9 +14,6 @@ import 'vant/lib/index.css';
 import 'vant/lib/icon/local.css';//本地
 Vue.use(Vant);
 
-import { Notify } from 'vant';
-Vue.prototype.Notify = Notify
-
 // 引入水印
 import watermark from "@/utils/watermark";
 Vue.prototype.$watermark = watermark

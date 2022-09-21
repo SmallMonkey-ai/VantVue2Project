@@ -1,0 +1,520 @@
+{
+	"state": 0,
+	"data": [{
+		"text": "营销中心",
+		"orgId": "OU=营销中心,OU=shhzcj",
+		"children": [{
+			"text": "",
+			"orgId": "OU=营销中心,OU=shhzcj",
+			"children": [{"text":"","orgId": "OU=营销中心,OU=shhzcj"}]
+		}]
+	},{
+		"text": "资源管理部",
+		"orgId": "OU=资源管理部,OU=营销中心,OU=shhzcj",
+		"children": [{
+			"text": "",
+			"orgId": "OU=资源管理部,OU=营销中心,OU=shhzcj",
+			"children": [{"text":"","orgId": "OU=资源管理部,OU=营销中心,OU=shhzcj"}]
+		}]
+	},{
+		"text": "一部",
+		"orgId": "OU=一部,OU=营销中心,OU=shhzcj",
+		"children": [{
+			"text": "",
+			"orgId": "OU=一部,OU=营销中心,OU=shhzcj",
+			"children": [{"text":"","orgId": "OU=一部,OU=营销中心,OU=shhzcj"}]
+		},{
+			"text": "一区",
+			"orgId": "OU=一区,OU=一部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=一区,OU=一部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=一区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=一区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=一区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=一区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "五组",
+				"orgId": "OU=五组,OU=一区,OU=一部,OU=营销中心,OU=shhzcj"
+			}]
+		}, {
+			"text": "二区",
+			"orgId": "OU=二区,OU=一部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=二区,OU=一部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=二区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=二区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=二区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=二区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "五组",
+				"orgId": "OU=五组,OU=二区,OU=一部,OU=营销中心,OU=shhzcj"
+			}]
+		}, {
+			"text": "三区",
+			"orgId": "OU=三区,OU=一部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=三区,OU=一部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=三区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=三区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=三区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=三区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "五组",
+				"orgId": "OU=五组,OU=三区,OU=一部,OU=营销中心,OU=shhzcj"
+			}]
+		}, {
+			"text": "四区",
+			"orgId": "OU=四区,OU=一部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=四区,OU=一部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=四区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=四区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=四区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=四区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "五组",
+				"orgId": "OU=五组,OU=四区,OU=一部,OU=营销中心,OU=shhzcj"
+			}]
+		}, {
+			"text": "五区",
+			"orgId": "OU=五区,OU=一部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=五区,OU=一部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=五区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=五区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=五区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=五区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "五组",
+				"orgId": "OU=五组,OU=五区,OU=一部,OU=营销中心,OU=shhzcj"
+			}]
+		},{
+			"text": "六区",
+			"orgId": "OU=六区,OU=一部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=六区,OU=一部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=六区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=六区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=六区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=六区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "五组",
+				"orgId": "OU=五组,OU=六区,OU=一部,OU=营销中心,OU=shhzcj"
+			}]
+		},{
+			"text": "七区",
+			"orgId": "OU=七区,OU=一部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=七区,OU=一部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=七区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=七区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=七区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=七区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "五组",
+				"orgId": "OU=五组,OU=七区,OU=一部,OU=营销中心,OU=shhzcj"
+			}]
+		},{
+			"text": "八区",
+			"orgId": "OU=八区,OU=一部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=八区,OU=一部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=八区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=八区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=八区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=八区,OU=一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "五组",
+				"orgId": "OU=五组,OU=八区,OU=一部,OU=营销中心,OU=shhzcj"
+			}]
+		}]
+	}, {
+		"text": "二部",
+		"orgId": "OU=二部,OU=营销中心,OU=shhzcj",
+		"children": [{
+			"text": "",
+			"orgId": "OU=二部,OU=营销中心,OU=shhzcj",
+			"children": [{"text":"","orgId": "OU=二部,OU=营销中心,OU=shhzcj"}]
+		},{
+			"text": "一区",
+			"orgId": "OU=一区,OU=二部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=一区,OU=二部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=一区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=一区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=一区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=一区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "五组",
+				"orgId": "OU=五组,OU=一区,OU=二部,OU=营销中心,OU=shhzcj"
+			}]
+		}, {
+			"text": "二区",
+			"orgId": "OU=二区,OU=二部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=二区,OU=二部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=二区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=二区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=二区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=二区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "五组",
+				"orgId": "OU=五组,OU=二区,OU=二部,OU=营销中心,OU=shhzcj"
+			}]
+		}, {
+			"text": "三区",
+			"orgId": "OU=三区,OU=二部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=三区,OU=二部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=三区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=三区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=三区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=三区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "五组",
+				"orgId": "OU=五组,OU=三区,OU=二部,OU=营销中心,OU=shhzcj"
+			}]
+		}, {
+			"text": "四区",
+			"orgId": "OU=四区,OU=二部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=四区,OU=二部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=四区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=四区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=四区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=四区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "五组",
+				"orgId": "OU=五组,OU=四区,OU=二部,OU=营销中心,OU=shhzcj"
+			}]
+		}, {
+			"text": "五区",
+			"orgId": "OU=五区,OU=二部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=五区,OU=二部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=五区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=五区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=五区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=五区,OU=二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "五组",
+				"orgId": "OU=五组,OU=五区,OU=二部,OU=营销中心,OU=shhzcj"
+			}]
+		}]
+	},{
+		"text": "升级一部",
+		"orgId": "OU=升级一部,OU=营销中心,OU=shhzcj",
+		"children": [{
+			"text": "",
+			"orgId": "OU=升级一部,OU=营销中心,OU=shhzcj",
+			"children": [{"text":"","orgId": "OU=升级一部,OU=营销中心,OU=shhzcj"}]
+		},{
+			"text": "一区",
+			"orgId": "OU=升级一区,OU=升级一部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=升级一区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=升级一区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=升级一区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=升级一区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=升级一区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			}]
+		}, {
+			"text": "二区",
+			"orgId": "OU=升级二区,OU=升级一部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=升级二区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=升级二区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=升级二区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=升级二区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=升级二区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			}]
+		}, {
+			"text": "三区",
+			"orgId": "OU=升级三区,OU=升级一部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=升级三区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=升级三区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=升级三区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=升级三区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=升级三区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "五组",
+				"orgId": "OU=五组,OU=升级三区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			}]
+		}, {
+			"text": "管家一区",
+			"orgId": "OU=管家一区,OU=升级一部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=管家一区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=管家一区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=管家一区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=管家一区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=管家一区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "五组",
+				"orgId": "OU=五组,OU=管家一区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "六组",
+				"orgId": "OU=六组,OU=管家一区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "七组",
+				"orgId": "OU=七组,OU=管家一区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "八组",
+				"orgId": "OU=八组,OU=管家一区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			}]
+		}]
+	},{
+		"text": "升级二部",
+		"orgId": "OU=升级二部,OU=营销中心,OU=shhzcj",
+		"children": [{
+			"text": "",
+			"orgId": "OU=升级二部,OU=营销中心,OU=shhzcj",
+			"children": [{"text":"","orgId": "OU=升级一部,OU=营销中心,OU=shhzcj"}]
+		},{
+			"text": "一区",
+			"orgId": "OU=升级一区,OU=升级二部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=升级一区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=升级一区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=升级一区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=升级一区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=升级一区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			}]
+		}, {
+			"text": "二区",
+			"orgId": "OU=升级二区,OU=升级二部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=升级二区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=升级二区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=升级二区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=升级二区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=升级二区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			}]
+		}, {
+			"text": "三区",
+			"orgId": "OU=升级三区,OU=升级二部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=升级三区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=升级三区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=升级三区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=升级三区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=升级三区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "五组",
+				"orgId": "OU=五组,OU=升级三区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			}]
+		}, {
+			"text": "管家一区",
+			"orgId": "OU=管家一区,OU=升级二部,OU=营销中心,OU=shhzcj",
+			"children": [{
+				"text": "",
+				"orgId": "OU=管家一区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "一组",
+				"orgId": "OU=一组,OU=管家一区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "二组",
+				"orgId": "OU=二组,OU=管家一区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "三组",
+				"orgId": "OU=三组,OU=管家一区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "四组",
+				"orgId": "OU=四组,OU=管家一区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			}, {
+				"text": "五组",
+				"orgId": "OU=五组,OU=管家一区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "六组",
+				"orgId": "OU=六组,OU=管家一区,OU=升级二部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "七组",
+				"orgId": "OU=七组,OU=管家一区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			},{
+				"text": "八组",
+				"orgId": "OU=八组,OU=管家一区,OU=升级一部,OU=营销中心,OU=shhzcj"
+			}]
+		}]
+	}]
+}

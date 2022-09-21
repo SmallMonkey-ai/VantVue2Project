@@ -33,8 +33,8 @@ const routes = [
     component: () => import('@/views/sale')
   },
   {
-    path: "/yearReport",
-    component: () => import('@/views/yearReport')
+    path: "/management",
+    component: () => import('@/views/management')
   },
 ]
 
